@@ -1,9 +1,9 @@
 <template>
     <div class="test">
-        {{ msg }}
         <br/>
         <br/>
-        <input type="text" v-model="name"/>
+        <div class="">{{ message }}</div>
+        <input type="text" v-model="message"/>
     </div>
 </template>
 
@@ -12,8 +12,18 @@ export default{
     name : 'TestComp',
     data : ()=>{
         return {
-            name : "manish1"
+            message : ''
         }
-    }
+    },
+    created : function(){
+        console.log("created")
+    },
+    mounted : function(){
+        console.log("mounted")
+    },
+    // updated : function(){
+    //     console.log(updated)
+    // },
+
 }
 </script>

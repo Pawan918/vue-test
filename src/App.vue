@@ -1,13 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Test msg="wait"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+  <Test/>
+  </div>
+
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-// import { ref } from 'vue';
+
 import Test from './components/Test.vue';
-// const message = ref('');
 export default {
   name: 'App',
   components: {
